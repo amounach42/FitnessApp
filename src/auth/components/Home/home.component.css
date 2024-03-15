@@ -1,0 +1,12 @@
+.img-container {
+    height: 48px; /* Adjust as needed */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,43 @@
+<mg-dashboard> </mg-dashboard>
+<div class="font-[sans-serif]">
+  <div
+    class="p-4 ml-[300px] lg:max-w-6xl max-w-xl 2xl:ml-[20%] md:max-w-full"
+  >
+    <h2 class="text-4xl font-extrabold text-gray-800 mb-12">CLIENTS</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
+      <div
+        class="bg-gray-100 rounded-2xl p-6 cursor-pointer hover:-translate-y-2 transition-all flex flex-col justify-center items-center gap-5 w-[350px]"
+        *ngFor="let user of users"
+      >
+        <div class="w-28 h-28 overflow-hidden rounded-full">
+          <img
+            src="https://retratosbarcelona.com/wp-content/uploads/2022/09/Retratos-Barcelona-Linkedin-Photo-Sydney.jpg"
+            alt="Product 1"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="text-center mt-4">
+          <h3 class="text-lg font-bold text-gray-800">
+            {{ user.fullName }}
+          </h3>
+          <h4 class="text-xl text-gray-700 font-bold mt-4">
+            <span class="text-gray-400 ml-2 font-medium">{{ user.address }}</span>
+          </h4>
+          <h4 class="text-xl text-gray-700 font-bold mt-4">
+            <span class="text-gray-400 ml-2 font-medium">{{ user.phone }}</span>
+          </h4>
+          <h4 class="text-xl text-gray-700 font-bold mt-4">
+            <span class="text-gray-400 ml-2 font-medium">{{ user.email }}</span>
+          </h4>
+          <button
+            type="button"
+            class="w-full mt-6 px-4 py-3 bg-[#333] hover:bg-[#222] text-white rounded-full"
+          >
+            More Details
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="w-screen h-screen overflow-hidden relative before:block before:absolute before:bg-black before:h-full before:w-full before:top-0 before:left-0 before:z-10 before:opacity-30">
+    <img src="https://fitness-challenges.com/files/2019/09/fitness-park.jpg" class="absolute top-0 left-0 min-h-full ob opacity-70" alt="" />
+    <!-- Navbar Code -->
+    <div class="flex justify-between items-center px-8 py-4 bg-black text-white">
+      <!-- Logo -->
+      <div class="flex items-center" style="z-index: 999;">
+        <img src="../../../assets/logo.png" class="h-10 w-auto" alt="Logo">
+        <span class="ml-2 text-lg font-bold">Fitness Park</span>
+        <hr style="color: #ffd600;">
+      </div>
+      <!-- Signin/Signup Buttons -->
+      <div class="flex items-center" style="z-index: 999;">
+        <button [routerLink]="['/auth/signup']" class="text-white uppercase py-3 px-6 border border-white hover:bg-white hover:bg-opacity-10 mr-4">Signup</button>
+        <button [routerLink]="['/auth/login']" class="text-white uppercase py-3 px-6 border border-white hover:bg-white hover:bg-opacity-10">Signin</button>
+      </div>
+    </div>
+  <div
+    class="relative z-20 max-w-screen-lg mx-auto grid grid-cols-12 h-full items-center"
+  >
+    <div class="col-span-6">
+      <span class="uppercase text-white text-xs font-bold mb-2 block"
+        >WE ARE EXPERTS</span
+      >
+      <h1 class="text-white font-extrabold text-5xl mb-8">
+        DÉPASSE-TOI ET ATTEINS
+      </h1>
+      <h1 style="color: #ffd600"><strong>TES OBJECTIFS !</strong></h1>
+      <p class="text-stone-100 text-base">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div style="display: flex; justify-content: space-between;">
+        <button
+        class="mt-8 text-white uppercase py-3 text-base font-light px-10 border border-white hover:bg-white hover:bg-opacity-10"
+        routerLink='/auth/signup'
+        >
+          Get Started
+      </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="py-12 relative overflow-hidden bg-white">
+  <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+    <!-- First Card -->
+    <div class="w-full flex flex-col items-center pr-16" *ngFor="let club of clubs">
+        <div class="h-48 mt-auto overflow-hidden relative">
+          <img
+            [src]="club.image"
+            class="h-full w-full object-cover"
+            alt="Club Image 1"
+          />
+        </div>
+        <div class="mt-4 text-center">
+          <h3 class="text-lg font-semibold text-gray-800">{{ club.name }}</h3>
+          <p class="text-sm text-gray-600">{{ club.address }}</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div
+  class="py-20 bg-slate-100 relative before:absolute before:h-full before:w-screen before:bg-sky-950 before:top-0 before:left-0"
+>
+  <div class="relative z-20 pl-12">
+    <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">
+      Finpoint is here <br />to help you
+    </h2>
+    <p class="text-white text-sm">
+      Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum
+      nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed
+      viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+    </p>
+    <button
+      class="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10"
+    >
+      Talk with expert
+    </button>
+  </div>
+</div>
